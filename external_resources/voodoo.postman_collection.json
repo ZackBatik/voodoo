@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "b20891fc-1a94-42ed-b60e-2f634c663e75",
+		"name": "voodoo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveGame",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/saveGame",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveGame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLatest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/saveGame/getLatest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveGame",
+						"getLatest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/saveGame/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveGame",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNew",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"playerLevel\": 2,\r\n    \"selectedHero\": \"Hercules\",\r\n    \"lastEnergyTimestamp\":\"09/18/2020 13:38:30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/saveGame/addNew",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveGame",
+						"addNew"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isLatest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latestCreateDate\":\"2021-01-24T15:49:58.214Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/saveGame/isLatest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveGame",
+						"isLatest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
